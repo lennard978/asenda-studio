@@ -36,7 +36,7 @@ export default function Contact() {
           />
           <button
             type="submit"
-            className="button px-6 py-3 rounded-full bg-[var(--color-asenda-orange)] text-white text-sm font-medium"
+            className="button px-6 py-3 rounded-full bg-(--color-asenda-orange) text-white text-sm font-medium"
           >
             Send message
           </button>

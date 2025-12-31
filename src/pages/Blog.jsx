@@ -8,8 +8,10 @@ import { useSEO } from "../hooks/useSEO";
 
 const posts = import.meta.glob("../content/posts/*.md", {
   query: "?raw",
+  import: "default",
   eager: true
 });
+
 
 export default function Blog() {
   const { i18n } = useTranslation();

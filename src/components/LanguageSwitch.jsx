@@ -10,7 +10,7 @@ export default function LanguageSwitch() {
       className="
     control-bg
     flex items-center gap-1 px-1 py-1 rounded-full
-    border border-[var(--color-line)]
+    border border-(--color-line)
     shadow-sm backdrop-blur-sm
   "
     >
@@ -22,7 +22,7 @@ export default function LanguageSwitch() {
           px-3 py-1 text-xs rounded-full font-medium transition-all duration-150 ease-out
 
           ${i18n.language === "en"
-            ? "bg-[var(--color-asenda-orange)] text-white"
+            ? "bg-(--color-asenda-orange) text-white"
             : "text-muted hover:opacity-80"
           }
         `}
@@ -37,7 +37,7 @@ export default function LanguageSwitch() {
           px-3 py-1 text-xs rounded-full transition-all duration-150 ease-out
  font-medium 
           ${i18n.language === "de"
-            ? "bg-[var(--color-asenda-orange)] text-white"
+            ? "bg-(--color-asenda-orange) text-white"
             : "text-muted hover:opacity-80"
           }
         `}

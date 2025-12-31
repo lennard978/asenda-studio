@@ -45,7 +45,7 @@ export default function Header() {
 
         <button
           onClick={toggle}
-          className="w-9 h-9 rounded-full border border-[var(--color-line)] flex items-center justify-center text-sm hover:bg-black/5 dark:hover:bg-white/10"
+          className="w-9 h-9 rounded-full border border-(--color-line) flex items-center justify-center text-sm hover:bg-black/5 dark:hover:bg-white/10"
           aria-label="Toggle theme"
         >
           {theme === "light" ? "🌙" : "☀️"}

@@ -37,14 +37,14 @@ export default function Home() {
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               to="/work"
-              className="button px-6 py-3 rounded-full bg-[var(--color-asenda-orange)] text-white text-sm font-medium"
+              className="button px-6 py-3 rounded-full bg-(--color-asenda-orange) text-white text-sm font-medium"
             >
               View work
             </Link>
 
             <Link
               to="/contact"
-              className="button px-6 py-3 rounded-full bg-[var(--color-asenda-orange)] text-white text-sm font-medium"
+              className="button px-6 py-3 rounded-full bg-(--color-asenda-orange) text-white text-sm font-medium"
             >
               Get in touch
             </Link>
