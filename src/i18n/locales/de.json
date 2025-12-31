@@ -1,0 +1,27 @@
+{
+	"brand": { "name": "ASENDA", "suffix": "Studio" },
+	"nav": {
+		"home": "Start",
+		"work": "Projekte",
+		"services": "Leistungen",
+		"blog": "Blog",
+		"about": "Über mich",
+		"contact": "Kontakt"
+	},
+	"hero": {
+		"title": "Premium digitale Produkte und Freelance-Softwareentwicklung.",
+		"subtitle": "Ich entwickle moderne PWAs, SaaS-Dashboards und saubere UX—optimiert für Performance, Klarheit und Skalierung.",
+		"ctaWork": "Projekte ansehen",
+		"ctaContact": "Kontakt"
+	},
+	"sections": {
+		"featuredWork": "Ausgewählte Projekte",
+		"services": "Leistungen",
+		"testimonials": "Referenzen",
+		"latestPosts": "Neueste Beiträge"
+	},
+	"legal": {
+		"imprint": "Impressum",
+		"privacy": "Datenschutz"
+	}
+}

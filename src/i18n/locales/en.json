@@ -1,0 +1,27 @@
+{
+	"brand": { "name": "ASENDA", "suffix": "Studio" },
+	"nav": {
+		"home": "Home",
+		"work": "Work",
+		"services": "Services",
+		"blog": "Blog",
+		"about": "About",
+		"contact": "Contact"
+	},
+	"hero": {
+		"title": "Premium digital products and freelance software delivery.",
+		"subtitle": "I build modern PWAs, SaaS dashboards, and clean user experiences—designed for performance, clarity, and scale.",
+		"ctaWork": "View work",
+		"ctaContact": "Get in touch"
+	},
+	"sections": {
+		"featuredWork": "Featured Work",
+		"services": "Services",
+		"testimonials": "Testimonials",
+		"latestPosts": "Latest Posts"
+	},
+	"legal": {
+		"imprint": "Imprint",
+		"privacy": "Privacy Policy"
+	}
+}

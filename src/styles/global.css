@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+:root {
+	--ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+	--dur-fast: 120ms;
+	--dur-base: 180ms;
+	--dur-slow: 220ms;
+}
+
+/* =========================
+   ASENDA DESIGN TOKENS
+   ========================= */
+@theme {
+	/* Brand */
+	--color-asenda-orange: #ff6b2c;
+
+	/* Light */
+	--color-bg: #fafafa;
+	--color-card: #ffffff;
+	--color-text: #111111;
+	--color-muted: #6b7280;
+	--color-line: rgba(17, 17, 17, 0.08);
+	--color-control-bg: rgba(255, 255, 255, 0.85);
+	--color-control-bg-dark: rgba(255, 255, 255, 0.08);
+	/* Dark */
+	--color-bg-dark: #0e0e11;
+	--color-card-dark: rgba(255, 255, 255, 0.06);
+	--color-text-dark: #f5f5f7;
+	--color-muted-dark: rgba(245, 245, 247, 0.65);
+	--color-line-dark: rgba(255, 255, 255, 0.1);
+
+	/* Radius */
+	--radius-lg: 14px;
+	--radius-xl: 18px;
+
+	/* Shadow */
+	--shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================
+   BASE
+   ========================= */
+html {
+	color-scheme: light dark;
+}
+
+body {
+	background: var(--color-bg);
+	color: var(--color-text);
+	font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+		Arial;
+}
+
+/* =========================
+   DARK MODE
+   ========================= */
+.dark body {
+	background: var(--color-bg-dark);
+	color: var(--color-text-dark);
+}
+
+/* =========================
+   UTILITIES
+   ========================= */
+.card {
+	background: var(--color-card);
+	color: var(--color-text);
+	border: 1px solid var(--color-line);
+	border-radius: var(--radius-xl);
+	box-shadow: var(--shadow-soft);
+	transition: transform var(--dur-base) var(--ease-out),
+		box-shadow var(--dur-base) var(--ease-out),
+		opacity var(--dur-fast) var(--ease-out);
+}
+
+.card:hover {
+	transform: translateY(-2px);
+}
+
+.dark .card {
+	background: var(--color-card-dark);
+	color: var(--color-text-dark); /* ✅ FIX */
+	border-color: var(--color-line-dark);
+	box-shadow: none;
+}
+
+.text-muted {
+	color: var(--color-muted);
+}
+
+.dark .text-muted {
+	color: var(--color-muted-dark);
+}
+
+.button {
+	transition: transform var(--dur-fast) var(--ease-out),
+		box-shadow var(--dur-fast) var(--ease-out),
+		opacity var(--dur-fast) var(--ease-out);
+}
+
+.button:hover {
+	transform: translateY(-1px);
+}
+
+.button:active {
+	transform: translateY(0);
+	opacity: 0.9;
+}
+
+.page-enter {
+	animation: pageFade var(--dur-slow) var(--ease-out);
+}
+
+@keyframes pageFade {
+	from {
+		opacity: 0;
+		transform: translateY(2px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation: none !important;
+		transition: none !important;
+	}
+}
+
+.control-bg {
+	background: var(--color-control-bg);
+}
+
+.dark .control-bg {
+	background: var(--color-control-bg-dark);
+}
+
+.dark .control-bg {
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
